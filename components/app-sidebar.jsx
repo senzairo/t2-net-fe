@@ -18,6 +18,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarProvider,
 } from "@/components/ui/sidebar"
 
 import { NavMain } from "@/components/nav-main"
@@ -35,26 +36,10 @@ const data = {
       url: "#",
       icon: IconDashboard,
       items: [
-        {
-          title: "Inventarisasi",
-          url: "/inventarisasi",
-          icon: IconNotebook,
-        },
-        {
-          title: "Peralatan",
-          url: "/peralatan",
-          icon: IconTool,
-        },
-        {
-          title: "Perangkat",
-          url: "/perangkat",
-          icon: IconDeviceLaptop,
-        },
-        {
-          title: "Teknisi",
-          url: "/teknisi",
-          icon: IconUser,
-        },
+        { title: "Inventarisasi", url: "/inventarisasi", icon: IconNotebook },
+        { title: "Peralatan", url: "/peralatan", icon: IconTool },
+        { title: "Perangkat", url: "/perangkat", icon: IconDeviceLaptop },
+        { title: "Teknisi", url: "/teknisi", icon: IconUser },
       ],
     },
   ],
