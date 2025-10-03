@@ -1,20 +1,8 @@
-// app/page.js
-import { fetchAPI } from "@/lib/api"; // pastikan kamu buat lib/api.js
-
-export default async function HomePage() {
-  // Panggil API Strapi
-  const { data: articles } = await fetchAPI("/articles");
-
+export default function DashboardPage() {
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Daftar Artikel dari Strapi</h1>
-      <ul className="space-y-2">
-        {articles.map((article) => (
-          <li key={article.id} className="p-3 border rounded">
-            {article.attributes.title}
-          </li>
-        ))}
-      </ul>
+      <h1 className="text-2xl font-bold">Dashboard</h1>
+      <p className="mt-2 text-gray-600">Selamat datang di dashboard T2Net 🚀</p>
     </div>
-  );
+  )
 }
